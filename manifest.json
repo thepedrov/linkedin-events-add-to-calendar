@@ -1,0 +1,37 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Events - Add to Calendar (iCal File)",
+    "description": "Save LinkedIn events to an .ics file (calendar file to Apple Calendar, Google Calendar, Outlook and others) and add to your calendar.",
+    "author": "pedro-v.com",
+    "version": "1.0",
+    "icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "action": {
+        "default_popup": "pages/popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://linkedin.com/*",
+                "*://www.linkedin.com/*"
+            ],
+            "js": [
+                "by_languages/en_us.js",
+                "by_languages/pt_br.js",
+                "dates.js",
+                "content.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "storage"
+    ]
+}

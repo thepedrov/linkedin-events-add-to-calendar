@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Events - Add to Calendar (iCal File)</title>
+  <link rel="icon" href="favicon.ico" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="images/logo.png" />
+      </div>
+    </div>
+    <div class="row bg-gray reminder-top">
+      <div class="col">
+        <h5>Reminder</h5>
+      </div>
+    </div>
+    <div class="row bg-gray reminder-bottom">
+      <div class="col">
+        <select id="selectReminder" class="form-control">
+          <option value="-1" selected>Don't remember</option>
+          <option value="0">At the time of the event</option>
+          <option value="5">5 minutes before</option>
+          <option value="15">15 minutes before</option>
+          <option value="30">30 minutes before</option>
+          <option value="60">1 hour before</option>
+          <option value="120">2 hours before</option>
+          <option value="720">12 hours before</option>
+          <option value="1440">1 day before</option>
+          <option value="10080">1 week before</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a href="help.html" target="_blank" class="link-warning">Help</a> | <a
+          href="https://github.com/thepedrov/linkedin-events-add-to-calendar" target="_blank"
+          class="link-warning">GitHub</a>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
